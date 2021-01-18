@@ -1,0 +1,318 @@
+/*Secular One Font Import*/
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+/*Base CSS Styles*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffffff;
+    --bg-colour: #2e2d2b;
+    --btn-colour: #c443c0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Secular One', sans-serif;
+}
+
+/*CSS styles relating to the header and nav*/
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 150px;
+    z-index: 50;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0,1);
+    transition: 1s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: var(--btn-colour);
+}
+
+/*CSS styles relating to the hero section*/
+section {
+    padding: 100px;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--bg-colour);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 25;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h2 {
+    position: relative;
+    font-size: 3em;
+    color: var(--white);
+    line-height: 1.5em;
+}
+
+.hero h2 span {
+    position: relative;
+    font-size: 1.5em;
+}
+
+.hero h3 {
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.btn {
+    position: relative;
+    background: var(--btn-colour);
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+/*CSS styles for about section*/
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.heading h2 {
+    font-size: 2.5rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-box {
+    padding-right: 30px;
+}
+
+.content-box h3 {
+    font-size: 2rem;
+    color: var(--btn-colour);
+}
+
+.content-box p {
+    padding-top: 20px;
+}
+
+.content-box i {
+    padding: 25px;
+}
+
+.content-box i:hover {
+    color: var(--btn-colour);
+}
+
+.w50 {
+    min-width: 50%;
+}
+.w50 img { 
+    max-width: 100%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*CSS styles for projects section*/
+.projects {
+    background: var(--bg-colour);
+}
+
+.heading.white {
+    color: var(--white);
+}
+
+.projects .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.projects .content .projects-box {
+    padding: 50px 20px;
+    border-radius: 10px;
+    background: var(--white);
+    color: var(--bg-colour);
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.projects .content .projects-box:hover {
+    opacity: 0.4;
+}
+
+.projects .content .projects-box img {
+    max-width: 80px;
+}
+
+.projects .content .projects-box h2 {
+    font-size: 1.5em;
+}
+
+/*CSS styles for contact section*/
+.contact {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    padding: 25px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact .box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact .box .phone {
+    display: flex;
+    align-items: center;
+}
+
+/*media queries for smaller screens*/
+@media only screen and (max-width: 991px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .menu {
+        position: fixed;
+        top: 83.2px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: var(--white);
+        transition: 0.5s;
+        z-index: 500;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    header ul li a {
+        color: var(--bg-colour);
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        transition: 0.1s;
+        z-index: 1000;
+    }
+
+    .toggle.active {
+        width: 40px;
+        height: 40px;
+        background: url(images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    section {
+        padding: 100px 50px;
+    }
+
+    .banner {
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+
+    .banner h3 {
+        font-size: 1em;
+    }
+
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .heading h2 {
+        font-size: 24px;
+    }
+
+    .context-box h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .w50 {
+        margin-bottom: 20px;
+    }
+  }

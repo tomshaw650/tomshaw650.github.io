@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Tom Shaw</title>
+</head>
+
+<body>
+    <header>
+        <div class="toggle" onclick='toggleMenu()'></div>
+        <ul class="menu">
+            <li> <a href="#hero">Home</a> </li>
+            <li> <a href="#about">About Me</a> </li>
+            <li> <a href="#projects">Projects</a> </li>
+            <li> <a href="#contact">Contact</a> </li>
+        </ul>
+    </header>
+
+    <section class="hero" id="hero">
+        <!--Stock video from coverr.co-->
+        <video src="images/bg-video.mp4" muted loop autoplay></video>
+        <div class="hero-text">
+            <h2>Hello, I'm<br><span>Tom Shaw!</span></h2>
+            <h3>Computer Science BSc Student</h3>
+            <a href="#contact"class="btn">Get in touch</a>
+        
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="content-box w50">
+                <h3>Student, Programmer, Tourist</h3>
+                <p>I am a Computer Science student based in Newcastle aspiring to develop a career in the field.
+                   I am currently searching to expand my experience with an industrial placement, where I
+                   am keen to apply my skills to a new challenge.<br><br>
+                   My skills:
+                   <ul>
+                       <li>Proficiency in HTML/CSS/JS, Java and Python</li>
+                       <li>Confident in communication, time management and problem solving</li>
+                       <li>Passionate about programming, desire to learn more!</li>
+                   </ul> <br><br>
+
+                   In my past time, I love holiday planning and travelling - I personally planned and booked a month-long
+                   trip to China for myself and 5 friends, including travel, accommodation, visas and activities.
+                </p>
+                <div class="tech-icons">
+                    <i class="fab fa-html5 fa-5x" alt="HTML5"></i>
+                    <i class="fab fa-css3-alt fa-5x"></i>
+                    <i class="fab fa-js-square fa-5x"></i>
+                    <i class="fab fa-java fa-5x"></i>
+                    <i class="fab fa-python fa-5x"></i>
+                </div>
+            </div>
+            <div class="w50">
+                <img src="images/tom.jpg" alt="Photo of me!">
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="heading white">
+            <h2>Project Portfolio</h2>
+            <p>A few projects I have worked on in my own time</p>
+        </div>
+        <div class="content">
+            <div class="projects-box">
+                <img src="#" alt="#">
+                <h2>Portfolio Website</h2>
+                <p>This website was built in vanilla HTML/CSS/JS, with Font Awesome implemented for icons.</p>
+            </div>
+            <div class="projects-box">
+                <img src="#" alt="#">
+                <h2>Bug Tracker</h2>
+                <p>Built in C# .NET, a web app to track bugs with a ticket system. Includes Oauth log-in and SQLite database.</p>
+            </div>
+            <div class="projects-box">
+                <img src="#" alt="#">
+                <h2>League of Legends Wrapped</h2>
+                <p>Built using the Riot API, collates data based on account name entered, showing statistics over the past year, similar to Spotify Wrapped.</p>
+            </div>
+        </div>
+    </section>
+        <div class="contact" id="contact">
+            <div class="contact-info-box">
+                <h2>Contact Info</h2>
+                <div class="box">
+                    <div class="phone">
+                        <i class="fas fa-phone-alt"></i><span>07821 260473</span><br><br>
+                    </div>
+                    <div class="email">
+                        <i class="fas fa-envelope"></i><a href="mailto:tomshaw650@gmail.com">tomshaw650@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="main.js"></script>
+</body>
+
+</html>
