@@ -316,4 +316,12 @@ section {
     .w50 {
         margin-bottom: 20px;
     }
+
+    .w50 img {
+        display: none;
+    }
+
+    .tech-icons {
+        display: none;
+    }
   }
