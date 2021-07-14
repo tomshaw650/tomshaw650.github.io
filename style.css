@@ -1,5 +1,6 @@
 /*Secular One Font Import*/
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 /*Base CSS Styles*/
 *,
@@ -38,6 +39,12 @@ header {
     align-items: center;
     background-color: rgba(0,0,0,1);
     transition: 1s;
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif;
+    color: var(--white);
+    margin-right: 700px;
 }
 
 header ul {
