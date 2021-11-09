@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Secular One', sans-serif; 
 }
 
 /*CSS styles relating to the header and nav*/
@@ -43,8 +43,16 @@ header {
 
 h1 {
     font-family: 'Russo One', sans-serif;
-    color: var(--white);
     margin-right: 700px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+h1 a:hover {
+    outline: purple;
 }
 
 header ul {
