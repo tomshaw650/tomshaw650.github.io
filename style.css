@@ -195,9 +195,11 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: stretch;
 }
 
 .projects .content .projects-box {
+    min-height: 100%;
     padding: 50px 20px;
     border-radius: 10px;
     background: var(--white);
@@ -224,28 +226,42 @@ section {
     font-size: 1.5em;
 }
 
-/*CSS styles for contact section*/
-.contact {
-    width: 100%;
-    height: 10em;
-    padding: 25px;
-    background-color: black;
-    color: white;
-}
-
-.contact h2 {
-    text-align: center;
-}
-
-.contact .box {
+/* footer styles */
+footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+
+    padding: 1em 0 1em 0;
 }
 
-.contact .box .phone {
-    display: flex;
-    align-items: center;
+footer p {
+    font-size: 2em;
+}
+
+footer a span {
+    display: none;
+}
+
+footer a i {
+    font-size: 2.5em;
+    padding: 0 9px 0 9px;
+}
+
+footer a:nth-child(2) {
+    margin-left: 10px;
+}
+
+footer a:nth-child(2) i:hover {
+    color: purple;
+}
+
+footer a:last-child i:hover {
+    color: turquoise;
+}
+
+footer a {
+    color: black;
 }
 
 /*media queries for smaller screens*/
@@ -264,7 +280,7 @@ section {
         width: 100%;
         height: 100vh;
         background: var(--white);
-        transition: 0.5s;
+        transition: 0.3s;
         z-index: 500;
         border-top: 1px solid rgba(0,0,0,0.2);
     }
