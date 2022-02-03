@@ -64,7 +64,7 @@ header ul {
 header ul li a {
     position: relative;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 30px;
     color: var(--white);
     text-decoration: none;
 }
